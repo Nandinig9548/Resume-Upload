@@ -1,0 +1,11 @@
+CREATE DATABASE resume_db;
+
+USE resume_db;
+
+CREATE TABLE resumes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  file_name VARCHAR(255),
+  upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
